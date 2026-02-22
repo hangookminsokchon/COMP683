@@ -65,10 +65,10 @@ def compute_distances_KDE(cluster_dict, coord_dict, cluster1, cluster2, cell_cla
     return distance_dict
 
 # Load computed classmap
-class_map = pd.read_csv('journalclub1/all_cells_example_classmap.csv')
+class_map = pd.read_csv('all_cells_example_classmap.csv')
 class_map = np.array(class_map)
 
-coord_dict, cluster_dict = get_coords('journalclub1/all_cells_example2.csv')
+coord_dict, cluster_dict = get_coords('all_cells_example2.csv')
 valid_clusters = sorted(list(cluster_dict.keys()))
 cell_class_dict = build_cell_class_dict(coord_dict, class_map)
 
